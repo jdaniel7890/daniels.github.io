@@ -1,0 +1,143 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    color: #ffffff; /* Color de texto blanco */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor para centrar y limitar el ancho del carrusel */
+.carousel-container {
+    max-width: 600px; /* Ancho máximo del carrusel para mantenerlo compacto */
+    margin: 0 auto; /* Centra el carrusel en la página */
+    padding-top: 20px; /* Espacio superior para separar el carrusel */
+}
+
+/* Estilo de las imágenes dentro del carrusel */
+.carousel-inner img {
+    border-radius: 10px; /* Bordes redondeados para un diseño más suave */
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del carrusel */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #ffffff; /* Color de fondo blanco */
+    color: white; /* Color del texto en el encabezado */
+    padding: 1px 0; /* Espaciado vertical */
+    text-align: center;
+}
+
+/* Lista de navegación en el encabezado */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el espaciado interno de la lista */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos en línea */
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+/* Estilo de los enlaces en la barra de navegación */
+
+
+/* Estilo de las secciones */
+section {
+    background: white; /* Fondo blanco */
+    margin: 15px 0; /* Margen superior e inferior */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Tarjeta de producto en promoción */
+.product-card {
+    background: #fff; /* Fondo blanco */
+    border: 2px solid #FFD700; /* Borde dorado */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones al hacer hover */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Escala la tarjeta en hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Aumenta la sombra en hover */
+}
+
+/* Estilo de la imagen de la tarjeta de producto */
+.product-card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Título del producto */
+.product-card h3 {
+    color: #333; /* Color oscuro */
+    margin: 10px 0; /* Margen superior e inferior */
+    font-size: 1.5em; /* Tamaño del texto */
+}
+
+/* Descripción del producto */
+.product-card p {
+    font-size: 1em; /* Tamaño del texto */
+    color: #555; /* Color gris */
+    margin: 10px 0;
+}
+
+/* Precio del producto */
+.price {
+    font-size: 1.3em; /* Tamaño del texto */
+    color: #FFD700; /* Color dorado */
+    margin: 10px 0;
+}
+
+/* Botón de compra */
+.buy-button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1em; /* Tamaño del texto */
+    transition: background-color 0.3s; /* Transición para el color de fondo */
+}
+
+.buy-button:hover {
+    background-color: #45a049; /* Cambia el fondo en hover */
+}
+
+/* Estilo para el fondo de video */
+.background-video {
+    position: fixed; /* Fija el video como fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cubre todo el ancho de la página */
+    height: 100%; /* Cubre todo el alto de la página */
+    object-fit: cover; /* Asegura que el video cubra el fondo */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+/* Contenido sobre el video */
+.content {
+    position: relative; /* Permite colocar el contenido sobre el video */
+    color: white; /* Color blanco para el texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+}
+.container{
+
+    text-align: center;
+
+}

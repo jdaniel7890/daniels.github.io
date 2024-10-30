@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Churrasco</title>
+    <link rel="stylesheet" href="css2/style.css"> 
+</head>
+<body>
+    <!-- Sección del logo -->
+    <div class="logo-container">
+        <img src="img2/image-removebg-preview.png" alt="Logo de Churrasco" class="logo">
+    </div>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="parcial.html">INICIO</a></li>
+                <li><a href="productoBBQ.html">PRODUCTO</a></li>
+                <li><a href="otro.html">OTROS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenido de promociones -->
+        <div class="content">
+            <h1>PROMOCIONES</h1>
+            <p>Últimas Novedades en Churrasco</p>
+        </div>
+
+        <!-- Carrusel de productos -->
+        <div class="carousel-container"> <!-- Nueva clase para el marco del carrusel -->
+            <div class="carousel">
+                <img id="productoImagen" src="img2/img1.jpg" alt="Producto Churrasco"> 
+            </div>
+        </div>
+
+        <!-- Tarjetas de tipos de carne (solo 3 productos) -->
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img2/img1.jpg" alt="Bife Ancho con Hueso">
+                <h3>Bife Ancho con Hueso</h3>
+                <p>Corte jugoso con gran sabor gracias a su hueso.</p>
+                <span class="price">$30</span>
+                <button class="buy-button">Comprar Ahora</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img2/img3.jpg" alt="Lomo">
+                <h3>Lomo</h3>
+                <p>Tierna carne de lomo para los paladares más exigentes.</p>
+                <span class="price">$35</span>
+                <button class="buy-button">Comprar Ahora</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img2/img4.jpg" alt="Cola de Cuadril">
+                <h3>Cola de Cuadril</h3>
+                <p>Corte versátil y sabroso, ideal para la parrilla.</p>
+                <span class="price">$25</span>
+                <button class="buy-button">Comprar Ahora</button>
+            </div>
+        </div>
+
+        <!-- Script para el carrusel -->
+        <script>
+            const imagenes = [
+                'img2/img1.jpg',
+                'img2/img3.jpg',
+                'img2/img4.jpg'
+            ];
+        
+            let indice = 0;
+            const imgElement = document.getElementById('productoImagen');
+        
+            setInterval(() => {
+                indice = (indice + 1) % imagenes.length; // Cambia al siguiente índice
+                imgElement.src = imagenes[indice]; // Cambia la fuente de la imagen
+            }, 3000); // Cambia la imagen cada 3 segundos
+        </script>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Página de Churrasco. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+body, html {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Fondo animado sin efecto de desenfoque */
+body {
+    background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3F0ZjZzd2p6cWxsMDZrajg3eG41ajFjMzhtcHBodTNnenFucXlzNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT39D2A6TB8D1Ce79C/giphy.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Logo y encabezado */
+.logo-container {
+    text-align: center;
+    padding: 20px 0; /* Ajuste para centrar y dar espacio al logo */
+}
+
+.logo {
+    height: 60px; /* Ajusta el tamaño del logo */
+}
+
+/* Menú de navegación */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333; /* Color de fondo del encabezado */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Color dorado en hover */
+}
+
+/* Contenido sobre el fondo */
+.content, .product-container, footer {
+    position: relative;
+    z-index: 1; /* Mantiene el contenido visible sobre el fondo */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Carrusel de productos */
+.carousel-container {
+    max-width: 800px; /* Ancho máximo del marco del carrusel */
+    margin: 20px auto; /* Centra el marco */
+    overflow: hidden; /* Evita que la imagen se sobresalga del marco */
+    border: 2px solid #FFD700; /* Marco dorado alrededor del carrusel */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.carousel {
+    width: 100%; /* Ancho completo del marco */
+    height: 400px; /* Altura del marco del carrusel */
+    display: flex; /* Flexbox para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.carousel img {
+    width: 100%; /* Asegura que la imagen no sobresalga */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Tarjetas de productos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px; /* Ajuste de margen para colocar las tarjetas debajo del carrusel */
+}
+
+.product-card {
+    background: #fff;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    color: #333;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.3em;
+    color: #FFD700;
+    margin: 10px 0;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white; /* Color cambiado a blanco */
+}
